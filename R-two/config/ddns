@@ -1,0 +1,22 @@
+
+config ddns 'global'
+	option ddns_dateformat '%F %R'
+	option ddns_loglines '250'
+	option upd_privateip '0'
+
+config service 'DDNS'
+	option service_name '3322.org'
+	option enabled '1'
+	option lookup_host 'boo.f3322.net'
+	option domain 'boo.f3322.net'
+	option username 'boo'
+	option password 'iccid'
+	option ip_source 'interface'
+	option interface 'wan'
+	option check_interval '5'
+	option force_interval '5'
+	option force_unit 'minutes'
+	option retry_interval '5'
+	option dns_server '114.114.114.114'
+	option ip_interface 'pppoe-wan'
+
