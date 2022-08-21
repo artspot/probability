@@ -134,11 +134,6 @@ config rule
 config include
 	option path '/etc/firewall.user'
 
-config include 'shadowsocksr'
-	option type 'script'
-	option path '/var/etc/shadowsocksr.include'
-	option reload '1'
-
 config redirect
 	option target 'DNAT'
 	option src 'wan'
@@ -159,8 +154,23 @@ config redirect
 	option dest_port '80'
 	option name 'K2P'
 
+config include 'mia'
+	option type 'script'
+	option path '/etc/mia.include'
+	option reload '1'
+
 config include 'openclash'
 	option type 'script'
 	option path '/var/etc/openclash.include'
+	option reload '1'
+
+config include 'shadowsocksr'
+	option type 'script'
+	option path '/var/etc/shadowsocksr.include'
+	option reload '1'
+
+config include 'wrtbwmon'
+	option type 'script'
+	option path '/etc/wrtbwmon.include'
 	option reload '1'
 
