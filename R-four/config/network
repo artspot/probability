@@ -17,10 +17,6 @@ config interface 'lan'
 	option ip6assign '60'
 	option delegate '0'
 
-config device 'lan_eth1_dev'
-	option name 'eth1'
-	option macaddr '56:10:ec:3e:2e:89'
-
 config interface 'wan'
 	option ifname 'eth0'
 	option _orig_ifname 'eth0'
@@ -31,8 +27,3 @@ config interface 'wan'
 	option keepalive '0'
 	option delegate '0'
 	option ipv6 '0'
-
-config device 'wan_eth0_dev'
-	option name 'eth0'
-	option macaddr '54:10:ec:3e:2e:89'
-
