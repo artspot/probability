@@ -1,3 +1,0 @@
-
-10-mount上传到/etc/hotplug.d/block/目录下，覆盖同名文件
-openclash上传到/etc/config/目录下，覆盖同名文件
